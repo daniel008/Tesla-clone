@@ -11,20 +11,20 @@ function Header() {
 
   return (
     <Container>
-      <a>
+      <a href="/">
         <img src="/images/logo.svg" alt="Tesla Logo" />
       </a>
       <Menu>
         {cars &&
           cars.map((car, index) => (
-            <a key={index} href="#">
+            <a key={index} href="/">
               {car}
             </a>
           ))}
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
+        <a href="/">Shop</a>
+        <a href="/">Tesla Account</a>
         <CustomMenu onClick={() => setBurgerStatus(true)} />
       </RightMenu>
       <BurgerNav show={burgerStatus}>
@@ -34,38 +34,38 @@ function Header() {
         {cars &&
           cars.map((car, index) => (
             <li key={index}>
-              <a href="#">{car}</a>
+              <a href="/">{car}</a>
             </li>
           ))}
         <li>
-          <a href="#">Used Inventory</a>
+          <a href="/">Used Inventory</a>
         </li>
         <li>
-          <a href="#">Trade-in</a>
+          <a href="/">Trade-in</a>
         </li>
         <li>
-          <a href="#">Cybertrucky</a>
+          <a href="/">Cybertrucky</a>
         </li>
         <li>
-          <a href="#">Roadaster</a>
+          <a href="/">Roadaster</a>
         </li>
         <li>
-          <a href="#">Semi</a>
+          <a href="/">Semi</a>
         </li>
         <li>
-          <a href="#">Charging</a>
+          <a href="/">Charging</a>
         </li>
         <li>
-          <a href="#">Powerwall</a>
+          <a href="/">Powerwall</a>
         </li>
         <li>
-          <a href="#">Commercial Energy</a>
+          <a href="/">Commercial Energy</a>
         </li>
         <li>
-          <a href="#">Utilities</a>
+          <a href="/">Utilities</a>
         </li>
         <li>
-          <a href="#">Find Us</a>
+          <a href="/">Find Us</a>
         </li>
       </BurgerNav>
     </Container>
